@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Who are you?</h1>
+    
+    <form name="myForm" onsubmit="myFunction()">
+        <input type="text" name="inputt1">
+        <input type="number" name="inputt2">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+
+        function myFunction(){
+            var a = document.forms["myForm"]["inputt1"].value;
+        var b = document.forms["myForm"]["inputt2"].value;
+            if(a==""){
+                alert("Please enter your name!")
+            }
+            else{
+                alert("Thankyou for entering you name.")
+            }
+            if(b>= 18){
+                alert("You are old enough")
+            }
+            else{
+                alert("You are too young!")
+            }
+        }
+        
+    </script>
+</body>
+</html>
